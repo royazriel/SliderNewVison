@@ -130,7 +130,7 @@ extern uVectorEntry __vector_table;
 //****************************************************************************
 //                      LOCAL FUNCTION PROTOTYPES
 //****************************************************************************
-static long WlanConnect();
+//static long WlanConnect();
 void WlanStationMode( void *pvParameters );
 //static long CheckLanConnection();
 //static long CheckInternetConnection();
@@ -968,7 +968,7 @@ SMART_CONFIG:
 		{
 
 		}
-		osi_Sleep(1000);
+//		osi_Sleep(1000);
     }
 
 

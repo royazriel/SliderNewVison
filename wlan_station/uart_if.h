@@ -76,7 +76,7 @@ extern void DispatcherUartSendPacket(unsigned char *inBuff, unsigned short usLen
 extern int GetCmd(char *pcBuffer, unsigned int uiBufLen);
 extern void InitTerm(void);
 extern void ClearTerm(void);
-extern void Message(const char *format);
+extern void UartMessage(const char *format);
 extern void Error(char *format,...);
 extern int TrimSpace(char * pcInput);
 extern int Report(const char *format, ...);

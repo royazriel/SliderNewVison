@@ -2,3 +2,7 @@ C:\project\2014\Rogat\SliderNewVision\TcpClient\TcpSliderProtocol\TcpSliderProto
 C:\project\2014\Rogat\SliderNewVision\TcpClient\TcpSliderProtocol\TcpSliderProtocol\bin\Debug\TcpSliderProtocol.pdb
 C:\project\2014\Rogat\SliderNewVision\TcpClient\TcpSliderProtocol\TcpSliderProtocol\obj\Debug\TcpSliderProtocol.dll
 C:\project\2014\Rogat\SliderNewVision\TcpClient\TcpSliderProtocol\TcpSliderProtocol\obj\Debug\TcpSliderProtocol.pdb
+C:\project\2014\Rogat\SliderNewVision\Projects\TcpClient\TcpSliderProtocol\TcpSliderProtocol\bin\Debug\TcpSliderProtocol.dll
+C:\project\2014\Rogat\SliderNewVision\Projects\TcpClient\TcpSliderProtocol\TcpSliderProtocol\bin\Debug\TcpSliderProtocol.pdb
+C:\project\2014\Rogat\SliderNewVision\Projects\TcpClient\TcpSliderProtocol\TcpSliderProtocol\obj\Debug\TcpSliderProtocol.dll
+C:\project\2014\Rogat\SliderNewVision\Projects\TcpClient\TcpSliderProtocol\TcpSliderProtocol\obj\Debug\TcpSliderProtocol.pdb

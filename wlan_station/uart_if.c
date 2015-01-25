@@ -100,7 +100,7 @@ InitTerm()
 //
 //*****************************************************************************
 void 
-Message(const char *str)
+UartMessage(const char *str)
 {
 #ifndef NOTERM
     if(str != NULL)
@@ -126,7 +126,7 @@ Message(const char *str)
 void 
 ClearTerm()
 {
-    Message("\33[2J\r");
+	UartMessage("\33[2J\r");
 }
 
 //*****************************************************************************
@@ -146,7 +146,7 @@ Error(char *pcFormat, ...)
     va_list list;
     va_start(list,pcFormat);
     vsnprintf(cBuf,256,pcFormat,list);
-    Message(cBuf);
+    UartMessage(cBuf);
 #endif
     __Errorlog++;
 }
@@ -303,7 +303,7 @@ int Report(const char *pcFormat, ...)
           iSize*=2;
           if((pcTemp=realloc(pcBuff,iSize))==NULL)
           { 
-              Message("Could not reallocate memory\n\r");
+        	  UartMessage("Could not reallocate memory\n\r");
               iRet = -1;
               break;
           }
@@ -314,7 +314,7 @@ int Report(const char *pcFormat, ...)
           
       }
   }
-  Message(pcBuff);
+  UartMessage(pcBuff);
   free(pcBuff);
   
 #endif

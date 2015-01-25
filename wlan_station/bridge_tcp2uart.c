@@ -36,8 +36,8 @@ int BridgeTcp2UartSocketListen( unsigned short usPort )
 	int             iNewSockID;
 	long            lNonBlocking = 1;
 	int i;
+	int msgLength;
 
-RESTART_SOCKET:
 	//filling the TCP server socket address
 	sLocalAddr.sin_family = SL_AF_INET;
 	sLocalAddr.sin_port = sl_Htons((unsigned short)usPort);
@@ -105,6 +105,37 @@ RESTART_SOCKET:
 
 	while(1)
 	{
+		//1. we are already connected read message from tcp check validity
+		iStatus = sl_Recv(iNewSockID, sRxBuffer, PROTOCOL_HEADER_SIZE, 0);
+		if( iStatus <= 0 )
+		{
+		  // error
+		  ASSERT_ON_ERROR( sl_Close(iNewSockID));
+		  ASSERT_ON_ERROR(sl_Close(iSockID));
+		  ASSERT_ON_ERROR(TCP_SERVER_FAILED);
+		}
+		if( sRxBuffer[0] == MESSAGE_PREAMBLE )
+		{
+			msgLength = sRxBuffer[4];
+			iStatus = sl_Recv(iNewSockID, sRxBuffer+PROTOCOL_HEADER_SIZE,sRxBuffer[4]+1, 0);
+			if( iStatus <= 0 )
+			{
+			  // error
+			  ASSERT_ON_ERROR( sl_Close(iNewSockID));
+			  ASSERT_ON_ERROR(sl_Close(iSockID));
+			  ASSERT_ON_ERROR(TCP_SERVER_FAILED);
+			}
+			if( ProtocolMessageValidateCrc( sRxBuffer, PROTOCOL_HEADER_SIZE + sRxBuffer[4] + 1))
+			{
+				//2. write message to uart
+			}
+		}
+
+
+		//3. read response from uart
+		//4. write response to tcp
+
+#if 0
 		iStatus = sl_Recv(iNewSockID, sRxBuffer, 6, 0);
 		if( iStatus <= 0 )
 		{
@@ -125,6 +156,7 @@ RESTART_SOCKET:
 			  ASSERT_ON_ERROR(TCP_SERVER_FAILED);
 			}
 		}
+#endif
 	}
 
 

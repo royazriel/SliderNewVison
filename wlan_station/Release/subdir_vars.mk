@@ -11,6 +11,7 @@ C_SRCS += \
 ../gpio_if.c \
 ../main.c \
 ../pinmux.c \
+../protocol.c \
 ../uart_if.c 
 
 OBJS += \
@@ -18,6 +19,7 @@ OBJS += \
 ./gpio_if.obj \
 ./main.obj \
 ./pinmux.obj \
+./protocol.obj \
 ./uart_if.obj 
 
 C_DEPS += \
@@ -25,6 +27,7 @@ C_DEPS += \
 ./gpio_if.pp \
 ./main.pp \
 ./pinmux.pp \
+./protocol.pp \
 ./uart_if.pp 
 
 C_DEPS__QUOTED += \
@@ -32,6 +35,7 @@ C_DEPS__QUOTED += \
 "gpio_if.pp" \
 "main.pp" \
 "pinmux.pp" \
+"protocol.pp" \
 "uart_if.pp" 
 
 OBJS__QUOTED += \
@@ -39,6 +43,7 @@ OBJS__QUOTED += \
 "gpio_if.obj" \
 "main.obj" \
 "pinmux.obj" \
+"protocol.obj" \
 "uart_if.obj" 
 
 C_SRCS__QUOTED += \
@@ -46,6 +51,7 @@ C_SRCS__QUOTED += \
 "../gpio_if.c" \
 "../main.c" \
 "../pinmux.c" \
+"../protocol.c" \
 "../uart_if.c" 
 
 

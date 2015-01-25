@@ -12,6 +12,7 @@ $(GEN_CMDS__FLAG) \
 "./gpio_if.obj" \
 "./main.obj" \
 "./pinmux.obj" \
+"./protocol.obj" \
 "./uart_if.obj" \
 "../cc3200v1p32.cmd" \
 -l"libc.a" \
@@ -131,7 +132,7 @@ BIN_OUTPUTS__QUOTED += \
 all: wlan_station.out
 
 dependents:
-	-cd C:/ti/CC3200SDK_1.0.0/cc3200-sdk/ti_rtos/ti_rtos_config/ccs/Default && $(MAKE) clean all
+	-cd C:/ti/CC3200SDK_1.0.0/cc3200-sdk/ti_rtos/ti_rtos_config/ccs/Default && $(MAKE) all
 
 # Tool invocations
 wlan_station.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) C:/ti/CC3200SDK_1.0.0/cc3200-sdk/ti_rtos/ti_rtos_config/ccs/Default/configPkg/linker.cmd
@@ -151,8 +152,8 @@ wlan_station.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)$(BIN_OUTPUTS__QUOTED)
-	-$(RM) "bridge_tcp2uart.pp" "gpio_if.pp" "main.pp" "pinmux.pp" "uart_if.pp" 
-	-$(RM) "bridge_tcp2uart.obj" "gpio_if.obj" "main.obj" "pinmux.obj" "uart_if.obj" 
+	-$(RM) "bridge_tcp2uart.pp" "gpio_if.pp" "main.pp" "pinmux.pp" "protocol.pp" "uart_if.pp" 
+	-$(RM) "bridge_tcp2uart.obj" "gpio_if.obj" "main.obj" "pinmux.obj" "protocol.obj" "uart_if.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

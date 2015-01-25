@@ -21,6 +21,7 @@
 #include "common.h"
 #include "uart_if.h"
 #include "error_codes.h"
+#include "protocol.h"
 
 int BridgeTcp2UartSocketListen( unsigned short usPort );
 
