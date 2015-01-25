@@ -1,0 +1,10 @@
+C:\project\2014\Rogat\SliderNewVision\TcpClient\TestTcpProtocol\TestTcpProtocol\bin\Debug\TestTcpProtocol.exe
+C:\project\2014\Rogat\SliderNewVision\TcpClient\TestTcpProtocol\TestTcpProtocol\bin\Debug\TestTcpProtocol.pdb
+C:\project\2014\Rogat\SliderNewVision\TcpClient\TestTcpProtocol\TestTcpProtocol\bin\Debug\TcpSliderProtocol.dll
+C:\project\2014\Rogat\SliderNewVision\TcpClient\TestTcpProtocol\TestTcpProtocol\bin\Debug\TcpSliderProtocol.pdb
+C:\project\2014\Rogat\SliderNewVision\TcpClient\TestTcpProtocol\TestTcpProtocol\obj\x86\Debug\TestTcpProtocol.csprojResolveAssemblyReference.cache
+C:\project\2014\Rogat\SliderNewVision\TcpClient\TestTcpProtocol\TestTcpProtocol\obj\x86\Debug\TestTcpProtocol.Form1.resources
+C:\project\2014\Rogat\SliderNewVision\TcpClient\TestTcpProtocol\TestTcpProtocol\obj\x86\Debug\TestTcpProtocol.Properties.Resources.resources
+C:\project\2014\Rogat\SliderNewVision\TcpClient\TestTcpProtocol\TestTcpProtocol\obj\x86\Debug\TestTcpProtocol.csproj.GenerateResource.Cache
+C:\project\2014\Rogat\SliderNewVision\TcpClient\TestTcpProtocol\TestTcpProtocol\obj\x86\Debug\TestTcpProtocol.exe
+C:\project\2014\Rogat\SliderNewVision\TcpClient\TestTcpProtocol\TestTcpProtocol\obj\x86\Debug\TestTcpProtocol.pdb
